@@ -1,4 +1,4 @@
-package com.anushka.tmdbclient.data.model
+package com.anushka.tmdbclient.data.model.artist
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,4 +1,4 @@
-package com.anushka.tmdbclient.data.model
+package com.anushka.tmdbclient.data.model.tvshow
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

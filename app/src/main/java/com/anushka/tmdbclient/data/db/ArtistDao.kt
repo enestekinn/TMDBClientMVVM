@@ -1,0 +1,23 @@
+package com.anushka.tmdbclient.data.db
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import com.anushka.tmdbclient.data.model.artist.Artist
+import com.anushka.tmdbclient.data.model.movie.Movie
+
+
+@Dao
+interface ArtistDao {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun saveArtist(movies: List<Artist>)
+
+    @Query("DELETE  FROM  popular_artists")
+    suspend fun deleteAllArtist()
+
+    @Query("SELECT * FROM popular_artists")
+    suspend fun getArtist(movies: List<Artist>)
+
+}

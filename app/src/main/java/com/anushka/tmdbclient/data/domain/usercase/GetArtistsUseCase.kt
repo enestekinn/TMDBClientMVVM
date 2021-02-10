@@ -3,9 +3,9 @@ package com.anushka.tmdbclient.data.domain.usercase
 import com.anushka.tmdbclient.data.domain.repository.ArtistRepository
 import com.anushka.tmdbclient.data.model.artist.Artist
 
-class UpdateArtistsUserCase(private val artistRepository: ArtistRepository) {
+class GetArtistsUseCase(private val artistRepository: ArtistRepository) {
 
-    suspend fun execute(): List<Artist>? = artistRepository.updateArtist()
+    suspend fun execute(): List<Artist>? = artistRepository.getArtist()
 
 
 

@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "popular_artists")
 data class Artist(
     val adult: Boolean,
-
     @PrimaryKey
     val id: Int,
     val name: String,
